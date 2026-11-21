@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sembilan Puluh — Spesialis Interior Rumah | Segera Hadir</title>
+  <meta name="description" content="Website resmi Sembilan Puluh - Spesialis Interior Rumah sedang dalam tahap pengembangan dan pemeliharaan." />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            taupe: {
+              50: '#FAF9F7',
+              100: '#F3F1ED',
+              200: '#E5E1D9',
+              300: '#CEC8BC',
+              400: '#A9A194',
+              500: '#8E8679',
+              600: '#726B5F',
+              700: '#59534A',
+              800: '#3D3933',
+              900: '#24211D',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'pulse-slow': 'pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(18px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .architectural-bg {
+      background-color: #FAF9F7;
+      background-image: 
+        radial-gradient(circle at 50% 38%, rgba(142, 134, 121, 0.08) 0%, rgba(250, 249, 247, 0) 62%),
+        linear-gradient(to right, rgba(142, 134, 121, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(142, 134, 121, 0.045) 1px, transparent 1px);
+      background-size: 100% 100%, 64px 64px, 64px 64px;
+    }
+
+    .animation-delay-150 {
+      animation-delay: 150ms;
+    }
+    .animation-delay-300 {
+      animation-delay: 300ms;
+    }
+    .animation-delay-450 {
+      animation-delay: 450ms;
+    }
+  </style>
+</head>
+<body class="architectural-bg text-taupe-800 antialiased selection:bg-taupe-500 selection:text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+  <!-- Header Minimalis -->
+  <header class="w-full px-6 sm:px-12 pt-8 flex items-center justify-center text-xs tracking-[0.2em] uppercase text-taupe-500">
+    <div class="flex items-center justify-center gap-2.5">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-taupe-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-taupe-500"></span>
+      </span>
+      <span class="font-medium">Work In Progress</span>
+    </div>
+  </header>
+
+  <!-- Konten Utama: Logo di Tengah -->
+  <main class="flex-1 flex flex-col items-center justify-center px-6 py-16 text-center max-w-2xl mx-auto w-full">
+    
+    <!-- Container Logo Utama -->
+    <div class="opacity-0 animate-fade-in-up mb-10 sm:mb-12">
+      <div class="inline-flex items-center justify-center p-4 sm:p-6">
+        <img 
+          src="assets/logo-sembilan-puluh.png" 
+          alt="Sembilan Puluh - Spesialis Interior Rumah" 
+          class="w-full max-w-[290px] sm:max-w-[380px] md:max-w-[430px] h-auto object-contain select-none drop-shadow-[0_10px_25px_rgba(114,107,95,0.08)]"
+        />
+      </div>
+    </div>
+
+    <!-- Divider Halus -->
+    <div class="opacity-0 animate-fade-in-up animation-delay-150 w-16 h-[1px] bg-taupe-300 mb-8"></div>
+
+    <!-- Pesan Status Maintenance / WIP -->
+    <div class="opacity-0 animate-fade-in-up animation-delay-300 space-y-4">
+      <p class="text-xs sm:text-sm font-medium tracking-[0.25em] uppercase text-taupe-500">
+        Website Sedang Dalam Pengembangan
+      </p>
+      <p class="text-sm sm:text-base text-taupe-600 font-light leading-relaxed max-w-lg mx-auto pt-1">
+        Kami sedang menyempurnakan pengalaman menjelajahi Portofolio Desain, Custom Interior, dan layanan konsultasi kami. Situs akan segera kembali dapat diakses.
+      </p>
+    </div>
+
+    <!-- Progress Bar Minimalis -->
+    <div class="opacity-0 animate-fade-in-up animation-delay-450 w-full max-w-sm mt-10">
+      <div class="flex justify-between text-xs tracking-wider uppercase text-taupe-400 mb-3">
+        <span>Pembaruan Sistem</span>
+        <span>30%</span>
+      </div>
+      <div class="progress-track w-full h-2 bg-taupe-200 rounded-full overflow-hidden" role="progressbar" aria-label="Progres pembaruan sistem" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+        <div class="progress-fill h-full w-[30%] rounded-full"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Minimalis -->
+  <footer class="w-full px-6 sm:px-12 pb-8 pt-4">
+    <div class="max-w-5xl mx-auto border-t border-taupe-200/70 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-taupe-500">
+      <p>&copy; <span id="year"></span> Sembilan Puluh Interior — Spesialis Interior Rumah.</p>
+      <div class="flex items-center gap-6">
+        <a href="mailto:halo@sembilanpuluh.id" class="hover:text-taupe-800 transition-colors">
+          Hubungi Kami
+        </a>
+        <span class="text-taupe-300">&bull;</span>
+        <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer" class="hover:text-taupe-800 transition-colors">
+          Konsultasi WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
